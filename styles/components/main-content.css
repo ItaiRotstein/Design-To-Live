@@ -1,0 +1,5 @@
+.main-content {
+    border: solid 1px;
+    border-bottom: none;
+    border-color: var(--clr6);
+}

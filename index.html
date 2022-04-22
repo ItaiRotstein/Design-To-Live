@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design To Live Page</title>
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="main-screen" onclick="toggleMenu()"></div>
+    <div class="modal-screen" onclick="toggleModal()"></div>
+    <section class="header-container header-layout">
+        <header class="main-header main-layout flex space-between align-center">
+            <div class="logo">Blogin<span class="dot-green">.</span></div>
+            <nav class="main-nav-container">
+                <ul class="main-nav clean-list flex">
+                    <li class="active"><a class="active" href="#">Journal</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <button class="btn-menu" onclick="toggleMenu()"><i class="fa fa-bars"></i></button>
+            </nav>
+        </header>
+    </section>
+
+    <div class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Join us to get access to the latest stories!</h5>
+                </div>
+                <div class="modal-body">
+                    <!-- <p>Join us to get access to the latest stories!</p> -->
+                    <label for="email">Enter Your E-Mail </label>
+                    <input type="email" id="email">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn-close" onclick="toggleModal()">Close</button>
+                    <button class="btn-submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="main-content card-layout main-layout">
+        <div class="card flex">
+            <img src="img/001.png" alt="" class="card-image">
+            <div class="card-content flex space-between">
+                <h2 class="card-title">DUIS AUTE IRURE DOLOR IN HENDERIT IN VOLUPTATE.</h2>
+                <p class="card-text">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                    doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p class="card-text">
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur...
+                </p>
+                <button onclick="toggleModal()" class="btn-continue">Continue Reading</button>
+            </div>
+        </div>
+        <div class="card flex">
+            <img src="img/002.png" alt="" class="card-image">
+            <div class="card-content flex space-between">
+                <h2 class="card-title">DUIS AUTE IRURE DOLOR IN HENDERIT IN VOLUPTATE.</h2>
+                <p class="card-text">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                    doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p class="card-text">
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur...
+                </p>
+                <button onclick="toggleModal()" class="btn-continue">Continue Reading</button>
+            </div>
+        </div>
+        <div class="card flex">
+            <img src="img/003.png" alt="" class="card-image">
+            <div class="card-content flex space-between">
+                <h2 class="card-title">DUIS AUTE IRURE DOLOR IN HENDERIT IN VOLUPTATE.</h2>
+                <p class="card-text">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                    doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p class="card-text">
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur...
+                </p>
+                <button onclick="toggleModal()" class="btn-continue">Continue Reading</button>
+            </div>
+        </div>
+
+        <section class="paging flex space-between">
+            <button class="btn-paging btn-prev">PREVIOUS</button>
+            <button class="btn-paging btn-next">NEXT</button>
+        </section>
+
+    </main>
+
+    <footer class="main-footer flex align-center">
+        <div class="logo">Blogin<span class="dot-green">.</span></div>
+        <small>© 2014 Blogin.com - All Rights Reserved - Find more free Templates at <span>Pixelhint.com</span></small>
+        <ul class="social-list clean-list flex space-between">
+            <li>
+                <a href="#" class="link facebook">
+                    <i class="fa fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="link twitter">
+                    <i class="fa fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="link behance">
+                    <i class="fa fa-behance"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="link instagram">
+                    <i class="fa fa-dribbble"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <script>
+        function toggleMenu() {
+            document.body.classList.toggle("menu-open");
+        }
+
+        function toggleModal() {
+            document.querySelector('.modal').classList.toggle('open-modal')
+            document.querySelector('.modal-screen').classList.toggle('open-modal')
+        }
+    </script>
+</body>
+
+</html>

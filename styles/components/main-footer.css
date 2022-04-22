@@ -1,0 +1,52 @@
+.main-footer {
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--clr8);
+    gap: 2.37em;
+    height: 19.68em;
+    border-top: 1px solid var(--clr6);
+}
+
+.main-footer .logo {
+    color: var(--clr2);
+    font-family: eurofurence;
+    font-weight: 600;
+    font-size: 2.50em;
+}
+
+.main-footer small {
+    text-align: center;
+    font-size: 0.81em;
+}
+
+.main-footer small span {
+    font-weight: 700;       
+}
+
+.social-list {
+    display: flex;
+    gap: 2.5em;
+}
+
+.social-list a {
+    text-decoration: none;
+}
+
+.social-list .fa {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    width: 1.9em;
+    height: 1.9em;
+    color: WHITE;
+    background-color: var(--clr9);
+    transition: transform, border-radius, 0.3s;
+}
+
+.social-list .fa:hover {
+    transform: scale(1.1);
+    background-color: var(--clr10);
+    border-radius: 0.3em;
+}

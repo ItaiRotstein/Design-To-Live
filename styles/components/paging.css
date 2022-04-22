@@ -1,0 +1,32 @@
+.paging {
+    border-top: 1px solid var(--clr6);
+    padding: 1.87em 0;
+    margin: 0 auto;
+}
+
+.paging > button{
+    font-weight: 700 ;
+    font-family: lato;
+    font-size: 1.125em;
+    color: var(--clr7);
+    background: transparent;
+    border: none;
+    transition: transform 0.3s;
+}
+
+.btn-prev::before {
+    content: "← ";
+    padding-inline-start: 1.87em;
+    
+}
+
+.btn-next::after {
+    content: " →";
+    padding-inline-end: 1.87em;
+
+}
+
+.paging > button:hover{
+    cursor: pointer;
+    transform: scale(1.1);    
+}

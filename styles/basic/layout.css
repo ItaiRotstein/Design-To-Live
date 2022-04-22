@@ -1,0 +1,17 @@
+.main-layout {
+    margin: 0 auto;
+    /* max-width: 980px; */
+    /* margin-right: 1.6rem; */
+    /* margin-left: 1.6rem; */
+}
+
+.header-layout {
+    margin: 0 auto;
+}
+
+.card-layout>* {
+    margin-top: 3.37em;
+    gap: 2em;
+}
+
+
